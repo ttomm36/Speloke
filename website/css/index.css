@@ -1,0 +1,89 @@
+/*
+Blue: 000080
+Yellow:FFFF00
+Oker:ECD267
+Brown:BC7D3A
+Red:7E3822
+
+*/
+@font-face {
+  font-family: "SpelokeFont";
+  src: url("../../fonts/courtny-regular.ttf");
+}
+body {
+  background-color: navy;
+}
+
+.header {
+  color: yellow;
+  background-color: navy;
+  text-align: center;
+  font-family: "SpelokeFont";
+  font-size: 3em;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-bottom: 0%;
+  margin: 0%;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  width: 100%;
+  border-radius: 5px;
+}
+.menu li:hover {
+  background-color: #ecd267;
+  color: navy;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ecd267;
+  color: #7e3822;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5% 0 5%;
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  vertical-align: bottom;
+  color: #7e3822;
+}
+.footer a:hover {
+  text-decoration: underline;
+  vertical-align: bottom;
+  color: #7e3822;
+}
+
+.footer > p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    list-style: none;
+    display: block;
+    justify-content: space-evenly;
+  }
+  .menu li {
+    padding: 0px 0% 0px 0%; /* top right bottom left */
+  }
+
+  .menu li:hover {
+    background-color: #ecd267;
+    color: navy;
+    padding: 0px 0% 0px 0%;
+  }
+}
