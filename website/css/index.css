@@ -25,6 +25,21 @@ body {
   padding-bottom: 0%;
   margin: 0%;
 }
+.header header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header img {
+  left: 0;
+  fill: yellow;
+  stroke: yellow;
+  height: 100px;
+}
+
+.header img .cls-2 {
+  fill: hsl(60, 100%, 50%);
+}
 .menu {
   list-style: none;
   display: flex;
