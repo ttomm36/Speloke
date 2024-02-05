@@ -8,7 +8,7 @@ Red:7E3822
 */
 @font-face {
   font-family: "SpelokeFont";
-  src: url("../../fonts/courtny-regular.ttf");
+  src: url("../assets/fonts/courtny-regular.ttf");
 }
 body {
   background-color: navy;
