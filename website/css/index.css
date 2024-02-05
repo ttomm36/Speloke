@@ -8,22 +8,34 @@ Red:7E3822
 */
 @font-face {
   font-family: "SpelokeFont";
+  src: url("../assets/fonts/Courtny.otf");
+}
+@font-face {
+  font-family: "SpelokeFontBold";
+  src: url("../assets/fonts/Courtny\ Bold.otf");
+}
+@font-face {
+  font-family: "SpelokeFontLight";
+  src: url("../assets/fonts/Courtny\ Light.otf");
+}
+@font-face {
+  font-family: "SpelokeFontExtra";
   src: url("../assets/fonts/courtny-regular.ttf");
 }
 body {
   background-color: navy;
+  padding: 0;
+  margin: 0;
 }
 
 .header {
   color: yellow;
   background-color: navy;
   text-align: center;
-  font-family: "SpelokeFont";
+  font-family: "SpelokeFontLight";
   font-size: 3em;
-  padding-left: 0%;
-  padding-right: 0%;
-  padding-bottom: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
 }
 .header header {
   display: flex;
@@ -37,13 +49,13 @@ body {
   height: 100px;
 }
 
-.header img .cls-2 {
-  fill: hsl(60, 100%, 50%);
-}
 .menu {
+  font-family: "SpelokeFontExtra";
   list-style: none;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .menu a {
@@ -65,19 +77,22 @@ body {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
+  width: 100%;
   background-color: #ecd267;
   color: #7e3822;
+  padding: 20px 0; /* Adjust padding as needed */
+  margin: 0;
+  margin-top: auto;
 }
 
 .footer ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 5% 0 5%;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer a {
@@ -95,19 +110,12 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
-  .menu {
-    list-style: none;
-    display: block;
-    justify-content: space-evenly;
-  }
-  .menu li {
-    padding: 0px 0% 0px 0%; /* top right bottom left */
-  }
-
-  .menu li:hover {
-    background-color: #ecd267;
-    color: navy;
-    padding: 0px 0% 0px 0%;
-  }
+div.main {
+  padding-left: 1rem;
+  font-family: "SpelokeFontLight";
+  font-weight: lighter;
+  color: #ecd267;
+}
+div.main h2 {
+  font-size: 3em;
 }
