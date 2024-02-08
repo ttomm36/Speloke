@@ -123,11 +123,20 @@ div.main h2 {
   font-size: 3em;
 }
 .main p {
+  text-decoration: none;
   text-align: center;
   font-weight: thin;
   color: #ecd267;
   padding: 0.5em;
   font-size: 2em;
+}
+.main p a {
+  text-decoration: none;
+  color: #7e3822;
+}
+.main p a:visited {
+  text-decoration: none;
+  color: #7e3822;
 }
 .main h3 {
   width: 100%;
@@ -139,7 +148,7 @@ div.main h2 {
   font-size: 2.5em;
   text-align: center;
 }
-.algemeen {
+.segment {
   height: max-content;
   display: grid;
   grid-template-areas:
@@ -149,18 +158,20 @@ div.main h2 {
   padding-top: 0;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.algemeen .sideImages {
+.segment .sideImages {
   position: relative;
   display: flex;
   width: 100%;
   grid-area: b;
   overflow: hidden;
 }
-.algemeen .sideImages img {
+.segment .sideImages img {
+  width: 350%;
   position: absolute;
   margin-left: -100%;
 }
 .tekst {
+  width: 100%;
   grid-area: c;
 }
 .tablePrijzen {
@@ -182,4 +193,27 @@ td {
   border-collapse: collapse;
   border: 1px solid #ecd267;
   text-align: center;
+}
+
+.segment2 {
+  height: max-content;
+  display: grid;
+  grid-template-areas:
+    "a b b"
+    "c b b"
+    "c b b";
+  padding-top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.segment2 .sideImages {
+  position: relative;
+  display: flex;
+  width: 100%;
+  grid-area: b;
+  overflow: hidden;
+}
+.segment2 .sideImages img {
+  clip-path: polygon(65% 0%, 100% 0%, 100% 100%, 65% 100%);
+  margin-left: -90%;
+  position: absolute;
 }
