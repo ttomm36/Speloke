@@ -216,5 +216,6 @@ td {
 .segment2 .sideImages img {
   clip-path: polygon(65% 0%, 100% 0%, 100% 100%, 65% 100%);
   margin-left: -90%;
+  margin-top: -50%;
   position: absolute;
 }
