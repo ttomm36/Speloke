@@ -113,7 +113,6 @@ body {
 }
 
 div.main {
-  padding-left: 1rem;
   font-family: "SpelokeFontLight";
   font-weight: lighter;
   color: #ecd267;
@@ -140,15 +139,16 @@ div.main h2 {
 .algemeen {
   display: grid;
   grid-template-areas:
-    "a a a"
+    "b a a"
     "b c c"
     "b c c";
-  padding: 5px;
   padding-top: 0;
-  margin: 1em;
   background-color: rgba(0, 0, 0, 0.1);
 }
-
+.algemeen img {
+  max-height: 25%;
+  grid-area: b;
+}
 .tekst {
   grid-area: c;
 }
