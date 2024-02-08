@@ -157,3 +157,23 @@ div.main h2 {
 .tekst {
   grid-area: c;
 }
+.tablePrijzen {
+  margin-top: 5%;
+  font-size: 2em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tablePrijzen th {
+  padding: 7%;
+}
+.tablePrijzen td {
+  padding: 7%;
+}
+.tablePrijzen,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid #ecd267;
+  text-align: center;
+}
