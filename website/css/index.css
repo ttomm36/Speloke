@@ -158,18 +158,20 @@ div.main h2 {
     "b b c";
   padding-top: 0;
   background-color: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .segment .sideImages {
   position: relative;
-  display: flex;
   width: 100%;
+  overflow: hidden;
   grid-area: b;
   overflow: hidden;
 }
 .segment .sideImages img {
-  width: 350%;
+  overflow: hidden;
   position: absolute;
-  margin-left: -100%;
+  height: 100%;
+  margin-left: -125%;
 }
 .tekst {
   width: 100%;
@@ -214,8 +216,35 @@ td {
   overflow: hidden;
 }
 .segment2 .sideImages img {
-  clip-path: polygon(65% 0%, 100% 0%, 100% 100%, 65% 100%);
-  margin-left: -90%;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+  margin-left: -100%;
   margin-top: -50%;
   position: absolute;
+}
+.segment3 {
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b";
+}
+.segment3 .backgroundImage {
+  height: 100%;
+  z-index: -1;
+  position: relative;
+  overflow: hidden;
+  grid-area: a;
+  width: 100%;
+}
+.segment3 .backgroundImage img {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  margin-top: -22%;
+}
+.segment3 h2 {
+  background-color: rgba(0, 0, 0, 0.7);
+
+  padding-bottom: 10px;
+  height: max-content;
+  grid-area: a;
 }
