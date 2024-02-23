@@ -236,14 +236,14 @@ td {
   width: 100%;
 }
 .segment3 .backgroundImage img {
+  filter: brightness(30%);
   overflow: hidden;
   position: absolute;
   width: 100%;
   margin-top: -22%;
 }
 .segment3 h2 {
-  background-color: rgba(0, 0, 0, 0.7);
-
+  height: 100%;
   padding-bottom: 10px;
   height: max-content;
   grid-area: a;
