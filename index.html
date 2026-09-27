@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tom Deganck - Kerngroep Speelplein Eksaarde</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+    
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    
+    .font-playful {
+      font-family: 'Fredoka', cursive;
+    }
+
+    .badge-pop {
+      animation: pulse 2.5s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+  </style>
+</head>
+<body class="bg-slate-50">
+
+  <!-- Navigatie -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b-4 border-amber-400 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <div class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-amber-400 border-2 border-slate-900 rounded-2xl flex items-center justify-center font-playful text-2xl font-bold text-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] rotate-2">
+            T
+          </div>
+          <div>
+            <span class="font-playful text-2xl font-extrabold text-slate-900 tracking-wide block leading-none">Tom Deganck</span>
+            <span class="text-xs font-black text-sky-600 uppercase tracking-wider">Kerngroep Speelplein Eksaarde</span>
+          </div>
+        </div>
+
+        <div class="hidden md:flex space-x-8 text-sm font-extrabold text-slate-700">
+          <a href="#ervaring" class="hover:text-sky-600 transition">Ervaring</a>
+          <a href="#kalender" class="hover:text-sky-600 transition">Maandplanning</a>
+          <a href="#ideeen" class="hover:text-sky-600 transition">Ideeënmuur</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="relative overflow-hidden bg-gradient-to-br from-amber-300 via-sky-200 to-indigo-100 pt-16 pb-20 border-b-4 border-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center space-x-2 bg-slate-900 text-amber-300 text-xs font-black uppercase px-4 py-2 rounded-full mb-6 shadow-md border border-slate-800 badge-pop">
+            <i class="fa-solid fa-star text-amber-400"></i>
+            <span>Kandidaat Kerngroep Eksaarde</span>
+          </div>
+          <h1 class="font-playful text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight mb-6">
+            Klaar voor een <span class="bg-amber-400 px-3 py-1 rounded-2xl border-2 border-slate-900 inline-block -rotate-1 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)]">topjaar</span> op Eksaarde!
+          </h1>
+          <p class="text-lg text-slate-800 font-medium mb-8 leading-relaxed">
+            Als Kern trekker wil ik mij vol inzetten voor <strong>Speelplein Eksaarde</strong>. Samen zorgen we voor geweldige activiteiten, overleg met de Jeugddienst, hechte teambuilding en leerrijke optionele vormingen!
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#kalender" class="bg-sky-600 hover:bg-sky-700 text-white font-extrabold px-8 py-4 rounded-2xl shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] border-2 border-slate-900 transition transform hover:-translate-y-0.5">
+              Bekijk Maandplanning 📅
+            </a>
+            <a href="#ervaring" class="bg-white hover:bg-slate-100 text-slate-900 font-extrabold px-8 py-4 rounded-2xl shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] border-2 border-slate-900 transition">
+              Bekijk Ervaring 🏆
+            </a>
+          </div>
+        </div>
+
+        <!-- Promotie Card -->
+        <div class="relative">
+          <div class="bg-white p-6 rounded-3xl shadow-[8px_8px_0px_0px_rgba(15,23,42,1)] border-4 border-slate-900 transform rotate-1">
+            <div class="bg-gradient-to-tr from-sky-500 to-indigo-500 h-72 rounded-2xl mb-6 flex flex-col items-center justify-center text-white relative overflow-hidden border-2 border-slate-900">
+              <i class="fa-solid fa-user-shield text-7xl text-amber-300 drop-shadow-[0_4px_0_rgba(0,0,0,0.4)] mb-3"></i>
+              <span class="font-playful text-white font-black text-3xl tracking-wide drop-shadow-md">TOM DEGANCK</span>
+              <span class="bg-slate-900 text-amber-300 text-xs font-black uppercase px-4 py-1.5 rounded-full mt-2 border border-slate-700">Kerntrekker / Hoofdanimator</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex justify-between items-center">
+                <h3 class="font-playful text-2xl font-black text-slate-900">Focus op Eksaarde</h3>
+                <span class="bg-emerald-400 text-slate-900 font-extrabold text-xs px-3 py-1 rounded-full border border-slate-900">100% Inzet</span>
+              </div>
+              <ul class="text-sm font-bold text-slate-700 space-y-2">
+                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2.5 text-base"></i> Ervaring met grote evenementen</li>
+                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2.5 text-base"></i> Ruimte voor groei & optionele vorming</li>
+                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2.5 text-base"></i> Altijd aanspreekbaar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gekend van deze evenementen -->
+  <section id="ervaring" class="py-20 bg-white border-b-4 border-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="bg-amber-300 text-slate-900 font-black text-xs uppercase px-4 py-1.5 rounded-full border border-slate-900">Bewezen Ervaring</span>
+        <h2 class="font-playful text-4xl sm:text-5xl font-black text-slate-900 mt-3 mb-4">
+          Gekend Van Deze Evenementen
+        </h2>
+        <p class="text-slate-600 font-medium">
+          Dankzij mijn ervaring bij deze projecten weet ik precies hoe we evenementen en de speelpleinwerking op Eksaarde strak en sfeervol organiseren:
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-indigo-50 p-8 rounded-3xl border-3 border-slate-900 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 transition">
+          <div class="w-16 h-16 bg-indigo-500 text-white border-2 border-slate-900 rounded-2xl flex items-center justify-center text-3xl font-black mb-6 shadow-[3px_3px_0px_0px_rgba(15,23,42,1)]">
+            <i class="fa-solid fa-glass-cheers"></i>
+          </div>
+          <h3 class="font-playful text-2xl font-black text-slate-900 mb-3">Galabal 50 Jaar</h3>
+          <p class="text-slate-700 text-sm font-medium leading-relaxed">
+            Een geslaagde en feestelijke avond. Strakke voorbereiding, oog voor detail en een fantastische sfeer voor alle aanwezigen.
+          </p>
+        </div>
+
+        <div class="bg-amber-50 p-8 rounded-3xl border-3 border-slate-900 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 transition">
+          <div class="w-16 h-16 bg-amber-400 text-slate-900 border-2 border-slate-900 rounded-2xl flex items-center justify-center text-3xl font-black mb-6 shadow-[3px_3px_0px_0px_rgba(15,23,42,1)]">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3 class="font-playful text-2xl font-black text-slate-900 mb-3">Dag Van De Animator 2026</h3>
+          <p class="text-slate-700 text-sm font-medium leading-relaxed">
+            Een dag volledig in het teken van de animatoren. Een verzorgd programma om iedereen te bedanken voor hun harde werk!
+          </p>
+        </div>
+
+        <div class="bg-emerald-50 p-8 rounded-3xl border-3 border-slate-900 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] hover:-translate-y-1 transition">
+          <div class="w-16 h-16 bg-emerald-400 text-slate-900 border-2 border-slate-900 rounded-2xl flex items-center justify-center text-3xl font-black mb-6 shadow-[3px_3px_0px_0px_rgba(15,23,42,1)]">
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <h3 class="font-playful text-2xl font-black text-slate-900 mb-3">Avondspel Moni Weekend</h3>
+          <p class="text-slate-700 text-sm font-medium leading-relaxed">
+            Een doordacht en spannend avondspel op het Moni Weekend dat zorgde voor teambuilding, actie en veel plezier.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERZICHTELIJKE MAANDPLANNING -->
+  <section id="kalender" class="py-20 bg-sky-100/70 border-b-4 border-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="bg-slate-900 text-amber-300 font-black text-xs uppercase px-4 py-1.5 rounded-full border border-slate-900">Voorbeeld Maandplanning</span>
+        <h2 class="font-playful text-4xl sm:text-5xl font-black text-slate-900 mt-3 mb-4">
+          Activiteiten & Vormingen op Eksaarde
+        </h2>
+        <p class="text-slate-700 font-medium text-base">
+          Een goed evenwicht tussen ontspanning, teambuilding, overleg mét de Jeugddienst én <strong>optionele vormingen</strong>.
+        </p>
+      </div>
+
+      <!-- Legende -->
+      <div class="flex flex-wrap justify-center gap-3 mb-10">
+        <div class="flex items-center bg-white px-4 py-2 rounded-xl border-2 border-slate-900 shadow-sm text-xs font-black">
+          <span class="w-3.5 h-3.5 rounded-full bg-purple-500 border border-slate-900 mr-2"></span>
+          <span>Optionele Vorming</span>
+        </div>
+        <div class="flex items-center bg-white px-4 py-2 rounded-xl border-2 border-slate-900 shadow-sm text-xs font-black">
+          <span class="w-3.5 h-3.5 rounded-full bg-teal-500 border border-slate-900 mr-2"></span>
+          <span>Creatief & Merch</span>
+        </div>
+        <div class="flex items-center bg-white px-4 py-2 rounded-xl border-2 border-slate-900 shadow-sm text-xs font-black">
+          <span class="w-3.5 h-3.5 rounded-full bg-blue-500 border border-slate-900 mr-2"></span>
+          <span>Vergadering & Jeugddienst</span>
+        </div>
+        <div class="flex items-center bg-white px-4 py-2 rounded-xl border-2 border-slate-900 shadow-sm text-xs font-black">
+          <span class="w-3.5 h-3.5 rounded-full bg-rose-500 border border-slate-900 mr-2"></span>
+          <span>Sfeer & Feest</span>
+        </div>
+      </div>
+
+      <!-- Maand Overzicht Kaarten -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Week 1: Vorming Schmink -->
+        <div class="bg-white rounded-3xl border-3 border-slate-900 p-6 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-purple-500 text-white font-black text-[10px] uppercase px-3 py-1 rounded-bl-xl border-b-2 border-l-2 border-slate-900">
+            Vorming
+          </div>
+          <div>
+            <span class="text-xs font-black text-purple-600 uppercase tracking-wider block mb-1">Week 1 • Zaterdag 14u</span>
+            <h3 class="font-playful text-2xl font-black text-slate-900 mb-3">Schminkcursus</h3>
+            <p class="text-xs text-slate-600 font-medium leading-relaxed mb-4">
+              Gegeven door <strong>Anupama</strong>! Leer grime-technieken om kinderen en kleuters op het plein om te toveren met de mooiste figuren.
+            </p>
+          </div>
+          <div class="pt-3 border-t-2 border-slate-100 flex justify-between items-center text-xs font-extrabold">
+            <span class="text-slate-500"><i class="fa-solid fa-location-dot text-purple-500 mr-1"></i> Lokaal Eksaarde</span>
+            <span class="text-purple-700 bg-purple-100 px-2.5 py-1 rounded-lg border border-purple-300">Optioneel</span>
+          </div>
+        </div>
+
+        <!-- Week 2: Merch Personaliseren -->
+        <div class="bg-white rounded-3xl border-3 border-slate-900 p-6 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-teal-500 text-white font-black text-[10px] uppercase px-3 py-1 rounded-bl-xl border-b-2 border-l-2 border-slate-900">
+            Workshop
+          </div>
+          <div>
+            <span class="text-xs font-black text-teal-600 uppercase tracking-wider block mb-1">Week 2 • Vrijdag 19u30</span>
+            <h3 class="font-playful text-2xl font-black text-slate-900 mb-3">Merch Personaliseren</h3>
+            <p class="text-xs text-slate-600 font-medium leading-relaxed mb-4">
+              Ontwerp en bedruk je eigen Speelplein Eksaarde truien, T-shirts en spullen! Maak jouw moni-outfit helemaal uniek voor de zomer.
+            </p>
+          </div>
+          <div class="pt-3 border-t-2 border-slate-100 flex justify-between items-center text-xs font-extrabold">
+            <span class="text-slate-500"><i class="fa-solid fa-shirt text-teal-500 mr-1"></i> Jeugdlokaal</span>
+            <span class="text-teal-700 bg-teal-100 px-2.5 py-1 rounded-lg border border-teal-300">Creatief</span>
+          </div>
+        </div>
+
+        <!-- Week 3: Algemene Vergadering Jeugddienst -->
+        <div class="bg-white rounded-3xl border-3 border-slate-900 p-6 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-blue-500 text-white font-black text-[10px] uppercase px-3 py-1 rounded-bl-xl border-b-2 border-l-2 border-slate-900">
+            Overleg
+          </div>
+          <div>
+            <span class="text-xs font-black text-blue-600 uppercase tracking-wider block mb-1">Week 3 • Woensdag 20u</span>
+            <h3 class="font-playful text-2xl font-black text-slate-900 mb-3">Algemene Vergadering Jeugddienst</h3>
+            <p class="text-xs text-slate-600 font-medium leading-relaxed mb-4">
+              Samen met de Jeugddienst bespreken we de zomerplanning, materialen, ondersteuning en afspraken voor Speelplein Eksaarde.
+            </p>
+          </div>
+          <div class="pt-3 border-t-2 border-slate-100 flex justify-between items-center text-xs font-extrabold">
+            <span class="text-slate-500"><i class="fa-solid fa-users text-blue-500 mr-1"></i> Raadzaal</span>
+            <span class="text-blue-700 bg-blue-100 px-2.5 py-1 rounded-lg border border-blue-300">Belangrijk</span>
+          </div>
+        </div>
+
+        <!-- Week 4: Movie Night -->
+        <div class="bg-white rounded-3xl border-3 border-slate-900 p-6 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-rose-500 text-white font-black text-[10px] uppercase px-3 py-1 rounded-bl-xl border-b-2 border-l-2 border-slate-900">
+            Activiteit
+          </div>
+          <div>
+            <span class="text-xs font-black text-rose-600 uppercase tracking-wider block mb-1">Week 4 • Vrijdag 20u</span>
+            <h3 class="font-playful text-2xl font-black text-slate-900 mb-3">Moni Movie Night</h3>
+            <p class="text-xs text-slate-600 font-medium leading-relaxed mb-4">
+              Gezellig samen ontspannen. Een goede film op groot scherm, chille zetels en verse popcorn voor de hele moni-ploeg!
+            </p>
+          </div>
+          <div class="pt-3 border-t-2 border-slate-100 flex justify-between items-center text-xs font-extrabold">
+            <span class="text-slate-500"><i class="fa-solid fa-film text-rose-500 mr-1"></i> Jeugdlokaal</span>
+            <span class="text-rose-700 bg-rose-100 px-2.5 py-1 rounded-lg border border-rose-300">Sfeer</span>
+          </div>
+        </div>
+
+        <!-- Week 5: Moni Kerstfeestje -->
+        <div class="bg-white rounded-3xl border-3 border-slate-900 p-6 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] flex flex-col justify-between relative overflow-hidden md:col-span-2 lg:col-span-2">
+          <div class="absolute top-0 right-0 bg-emerald-500 text-white font-black text-[10px] uppercase px-3 py-1 rounded-bl-xl border-b-2 border-l-2 border-slate-900">
+            Feest
+          </div>
+          <div>
+            <span class="text-xs font-black text-emerald-600 uppercase tracking-wider block mb-1">Eind van de maand • Zaterdag 18u</span>
+            <h3 class="font-playful text-2xl font-black text-slate-900 mb-3">Groots Moni Kerstfeestje</h3>
+            <p class="text-xs text-slate-600 font-medium leading-relaxed mb-4">
+              Secret Santa cadeautjes uitwisselen, lekkere hapjes en gezellig bijpraten om de werkingsperiode feestelijk en in stijl af te sluiten met heel het team.
+            </p>
+          </div>
+          <div class="pt-3 border-t-2 border-slate-100 flex justify-between items-center text-xs font-extrabold">
+            <span class="text-slate-500"><i class="fa-solid fa-gift text-emerald-500 mr-1"></i> Feestzaal Eksaarde</span>
+            <span class="text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-lg border border-emerald-300">Feest!</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Ideeënmuur Eksaarde -->
+  <section id="ideeen" class="py-20 bg-white border-b-4 border-slate-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="bg-indigo-100 text-indigo-900 font-black text-xs uppercase px-4 py-1.5 rounded-full border border-indigo-300">Inbreng Van Animatoren</span>
+        <h2 class="font-playful text-4xl sm:text-5xl font-black text-slate-900 mt-3 mb-3">
+          Ideeënmuur Eksaarde
+        </h2>
+        <p class="text-slate-600 font-medium">Welke vorming of activiteit zie jij graag op de planning van Eksaarde?</p>
+      </div>
+
+      <div class="bg-indigo-50/60 p-6 sm:p-8 rounded-3xl border-3 border-slate-900 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] mb-10">
+        <form id="ideaForm" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="text" id="authorInput" placeholder="Jouw naam (of 'Animator Eksaarde')" required class="w-full px-4 py-3 rounded-xl border-2 border-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+            <select id="categoryInput" class="w-full px-4 py-3 rounded-xl border-2 border-slate-900 font-bold focus:outline-none focus:ring-2 focus:ring-indigo-400">
+              <option value="Optionele Vorming">Optionele Vorming</option>
+              <option value="Sfeervolle Activiteit">Sfeervolle Activiteit</option>
+              <option value="Materialen & Merch">Materialen & Merch</option>
+            </select>
+          </div>
+          <textarea id="ideaText" rows="3" placeholder="Wat is jouw voorstel voor Speelplein Eksaarde?" required class="w-full px-4 py-3 rounded-xl border-2 border-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+          <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold py-4 rounded-xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] transition">
+            Plaats Idee Op De Muur 🚀
+          </button>
+        </form>
+      </div>
+
+      <div id="ideasBoard" class="grid sm:grid-cols-2 gap-4">
+        <!-- Voorbeeld 1 -->
+        <div class="bg-purple-50 p-5 rounded-2xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)]">
+          <span class="text-[10px] font-black uppercase tracking-wider text-purple-900 bg-purple-200 px-2.5 py-1 rounded-md border border-purple-400">Optionele Vorming</span>
+          <p class="text-slate-900 mt-3 text-sm font-semibold">"Een korte initiatie bosspelen maken en originele spelregels bedenken!"</p>
+          <div class="mt-4 pt-3 border-t border-slate-200 flex justify-between items-center text-xs font-bold text-slate-700">
+            <span>— Voorstel Moni</span>
+            <button onclick="likeIdea(this)" class="hover:text-purple-700 transition"><i class="fa-solid fa-thumbs-up"></i> <span class="like-count">14</span></button>
+          </div>
+        </div>
+
+        <!-- Voorbeeld 2 -->
+        <div class="bg-teal-50 p-5 rounded-2xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)]">
+          <span class="text-[10px] font-black uppercase tracking-wider text-teal-900 bg-teal-200 px-2.5 py-1 rounded-md border border-teal-400">Materialen & Merch</span>
+          <p class="text-slate-900 mt-3 text-sm font-semibold">"Coole Eksaarde-petten laten bedrukken tijdens de merch-avond!"</p>
+          <div class="mt-4 pt-3 border-t border-slate-200 flex justify-between items-center text-xs font-bold text-slate-700">
+            <span>— Animator Eksaarde</span>
+            <button onclick="likeIdea(this)" class="hover:text-teal-700 transition"><i class="fa-solid fa-thumbs-up"></i> <span class="like-count">11</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Bericht sturen -->
+
+  <script>
+    // Idea Wall Form
+    document.getElementById('ideaForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const author = document.getElementById('authorInput').value || 'Anoniem';
+      const category = document.getElementById('categoryInput').value;
+      const text = document.getElementById('ideaText').value;
+
+      const board = document.getElementById('ideasBoard');
+      const newCard = document.createElement('div');
+      newCard.className = "bg-emerald-50 p-5 rounded-2xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)]";
+      newCard.innerHTML = `
+        <span class="text-[10px] font-black uppercase tracking-wider text-emerald-900 bg-emerald-200 px-2.5 py-1 rounded-md border border-emerald-400">${category}</span>
+        <p class="text-slate-900 mt-3 text-sm font-semibold">"${text}"</p>
+        <div class="mt-4 pt-3 border-t border-slate-200 flex justify-between items-center text-xs font-bold text-slate-700">
+          <span>— ${author}</span>
+          <button onclick="likeIdea(this)" class="hover:text-emerald-700 transition"><i class="fa-solid fa-thumbs-up"></i> <span class="like-count">1</span></button>
+        </div>
+      `;
+      board.prepend(newCard);
+      this.reset();
+    });
+
+    // Like Function
+    function likeIdea(btn) {
+      const countSpan = btn.querySelector('.like-count');
+      let currentLikes = parseInt(countSpan.textContent);
+      countSpan.textContent = currentLikes + 1;
+      btn.classList.add('text-sky-600');
+      btn.disabled = true;
+    }
+
+    // Contact Form
+    document.getElementById('supportForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('supportSuccess').classList.remove('hidden');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
