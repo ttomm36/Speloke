@@ -7,148 +7,301 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
     
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #f8fafc;
-      color: #0f172a;
+      background-color: #f7f3be; 
+      color: #0b1354;
     }
-    
-    .font-playful {
-      font-family: 'Fredoka', cursive;
+
+    .font-fun {
+      font-family: 'Fredoka', cursive, sans-serif;
+    }
+
+    .bg-soft-yellow {
+      background-color: #f7f3be;
+    }
+
+    .bg-deep-blue {
+      background-color: #0b1354;
+    }
+
+    .text-deep-blue {
+      color: #0b1354;
+    }
+
+    .text-soft-yellow {
+      color: #f7f3be;
+    }
+
+    .border-deep-blue {
+      border-color: #0b1354;
+    }
+
+    .shadow-cartoon {
+      box-shadow: 6px 6px 0px 0px #0b1354;
     }
   </style>
 </head>
-<body class="bg-slate-50 min-h-screen flex flex-col">
+<body class="bg-soft-yellow text-deep-blue min-h-screen flex flex-col">
 
   <!-- Navigatie -->
-  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b-4 border-amber-400 shadow-sm">
+  <nav class="sticky top-0 z-50 bg-soft-yellow border-b-4 border-deep-blue shadow-md">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-20 items-center">
         <div class="flex items-center space-x-3">
-          <div class="w-12 h-12 bg-amber-400 border-2 border-slate-900 rounded-2xl flex items-center justify-center font-playful text-2xl font-bold text-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] rotate-2">
+          <div class="w-12 h-12 bg-deep-blue border-3 border-deep-blue rounded-2xl flex items-center justify-center text-2xl text-soft-yellow shadow-[3px_3px_0px_0px_rgba(11,19,84,1)] rotate-2 font-bold">
             💡
           </div>
           <div>
-            <span class="font-playful text-2xl font-extrabold text-slate-900 tracking-wide block leading-none">Ideeënmuur & Organogram</span>
-            <span class="text-xs font-black text-sky-600 uppercase tracking-wider">Speelplein Eksaarde</span>
+            <span class="font-fun text-2xl font-bold text-deep-blue tracking-wide block leading-none">Ideeënmuur & Organogram</span>
+            <span class="text-xs font-black text-blue-900 uppercase tracking-widest mt-1 block">Speelplein Eksaarde</span>
           </div>
         </div>
 
-        <div class="flex space-x-6 text-sm font-extrabold text-slate-700">
-          <a href="#ideeen" class="hover:text-sky-600 transition">Ideeënmuur</a>
-          <a href="#organogram" class="hover:text-sky-600 transition">Organogram</a>
+        <div class="flex space-x-6 text-base font-bold text-deep-blue">
+          <a href="#ideeen" class="hover:underline transition">Ideeënmuur</a>
+          <a href="#organogram" class="hover:underline transition">Organogram</a>
         </div>
       </div>
     </div>
   </nav>
   
   <!-- Ideeënmuur Eksaarde -->
-  <section id="ideeen" class="py-16 bg-white border-b-4 border-slate-900 flex-grow">
+  <section id="ideeen" class="py-16 bg-white/90 border-b-4 border-deep-blue flex-grow">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-10">
-        <span class="bg-indigo-100 text-indigo-900 font-black text-xs uppercase px-4 py-1.5 rounded-full border border-indigo-300">Inbreng Van Animatoren</span>
-        <h2 class="font-playful text-4xl sm:text-5xl font-black text-slate-900 mt-3 mb-3">
+        <span class="bg-deep-blue text-soft-yellow font-bold text-xs uppercase px-4 py-2 rounded-full border-2 border-deep-blue tracking-widest shadow-sm">Inbreng Van Animatoren</span>
+        <h2 class="font-fun text-4xl sm:text-5xl font-bold text-deep-blue mt-3 mb-2 tracking-wide">
           Ideeënmuur
         </h2>
-        <p class="text-slate-600 font-medium">Welke vorming, activiteit of suggestie heb jij voor Speelplein Eksaarde?</p>
+        <p class="text-deep-blue font-semibold text-lg">Welke vorming, activiteit of suggestie heb jij voor Speelplein Eksaarde?</p>
       </div>
 
       <!-- Formulier -->
-      <div class="bg-indigo-50/60 p-6 sm:p-8 rounded-3xl border-3 border-slate-900 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] mb-10">
+      <div class="bg-soft-yellow/70 p-6 sm:p-8 rounded-3xl border-3 border-deep-blue shadow-cartoon mb-10">
         <form id="ideaForm" class="space-y-4">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input type="text" id="authorInput" name="auteur" placeholder="Jouw naam (of 'Animator Eksaarde')" required class="w-full px-4 py-3 rounded-xl border-2 border-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-400" />
-            <select id="categoryInput" name="categorie" class="w-full px-4 py-3 rounded-xl border-2 border-slate-900 font-bold focus:outline-none focus:ring-2 focus:ring-indigo-400">
+            <input type="text" id="authorInput" name="auteur" placeholder="Jouw naam (of 'Animator Eksaarde')" required class="w-full px-4 py-3 rounded-xl bg-white border-3 border-deep-blue text-deep-blue placeholder-indigo-400 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-900 text-base" />
+            <select id="categoryInput" name="categorie" class="w-full px-4 py-3 rounded-xl bg-white border-3 border-deep-blue text-deep-blue font-bold focus:outline-none focus:ring-2 focus:ring-blue-900 text-base">
               <option value="Optionele Vorming">Optionele Vorming</option>
               <option value="Sfeervolle Activiteit">Sfeervolle Activiteit</option>
               <option value="Materialen & Merch">Materialen & Merch</option>
               <option value="Algemeen Idee">Algemeen Idee</option>
             </select>
           </div>
-          <textarea id="ideaText" name="idee" rows="3" placeholder="Wat is jouw voorstel voor Speelplein Eksaarde?" required class="w-full px-4 py-3 rounded-xl border-2 border-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
-          <button type="submit" id="submitBtn" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold py-4 rounded-xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] transition">
+          <textarea id="ideaText" name="idee" rows="3" placeholder="Wat is jouw voorstel voor Speelplein Eksaarde?" required class="w-full px-4 py-3 rounded-xl bg-white border-3 border-deep-blue text-deep-blue placeholder-indigo-400 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-900 text-base"></textarea>
+          <button type="submit" id="submitBtn" class="font-fun w-full bg-deep-blue hover:bg-blue-900 text-soft-yellow font-bold py-4 text-xl rounded-xl border-3 border-deep-blue shadow-[4px_4px_0px_0px_rgba(11,19,84,1)] transition transform active:translate-y-0.5 tracking-wider">
             Plaats Idee Op De Muur & Bewaar in Google Sheets 🚀
           </button>
         </form>
         
-        <div id="statusMessage" class="hidden mt-4 p-3 text-center text-sm font-bold rounded-xl border-2 border-slate-900 bg-emerald-100 text-emerald-900"></div>
+        <div id="statusMessage" class="hidden mt-4 p-3 text-center text-base font-bold rounded-xl border-3 border-deep-blue bg-blue-50 text-deep-blue tracking-wide"></div>
       </div>
 
       <!-- Ideeën kaarten -->
       <div id="ideasBoard" class="grid sm:grid-cols-2 gap-4">
-        <div class="text-center col-span-2 py-8 text-slate-500 font-semibold" id="loadingText">
-          <i class="fa-solid fa-spinner fa-spin mr-2"></i> Ideeën ophalen uit Google Sheets...
+        <div class="text-center col-span-2 py-8 text-deep-blue font-semibold text-lg tracking-wide" id="loadingText">
+          <i class="fa-solid fa-spinner fa-spin mr-2 text-deep-blue"></i> Ideeën ophalen uit Google Sheets...
         </div>
       </div>
     </div>
   </section>
 
   <!-- Organogram Section -->
-  <section id="organogram" class="py-16 bg-sky-50 border-b-4 border-slate-900">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="organogram" class="py-16 bg-soft-yellow border-b-4 border-deep-blue">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Hoofding -->
       <div class="text-center mb-12">
-        <span class="bg-amber-300 text-slate-900 font-black text-xs uppercase px-4 py-1.5 rounded-full border border-slate-900">Structuur & Team</span>
-        <h2 class="font-playful text-4xl sm:text-5xl font-black text-slate-900 mt-3 mb-3">
+        <span class="bg-deep-blue text-soft-yellow font-bold text-xs uppercase px-4 py-2 rounded-full border-2 border-deep-blue tracking-widest shadow-sm">Structuur & Team</span>
+        <h2 class="font-fun text-4xl sm:text-5xl font-bold text-deep-blue mt-3 mb-2 tracking-wide">
           Organogram Speelplein Eksaarde
         </h2>
-        <p class="text-slate-600 font-medium">De leiders en hun Smurf-tegenhangers per onderdeel.</p>
+        <p class="text-deep-blue font-semibold text-lg">De leiders en hun rollen binnen de kerngroep.</p>
       </div>
 
       <!-- Topniveau: Kerngroep Eksaarde -->
       <div class="max-w-md mx-auto mb-10 text-center">
-        <div class="bg-amber-300 p-5 rounded-3xl border-3 border-slate-900 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] inline-block w-full">
-          <span class="text-xs font-black text-slate-900 uppercase tracking-wider block mb-1">Eindverantwoordelijkheid</span>
-          <h3 class="font-playful text-2xl font-black text-slate-900">Kerngroep Eksaarde</h3>
+        <div class="bg-deep-blue text-soft-yellow p-6 rounded-3xl border-3 border-deep-blue shadow-cartoon inline-block w-full">
+          <span class="text-xs font-bold text-soft-yellow uppercase tracking-widest block mb-1">Eindverantwoordelijkheid</span>
+          <h3 class="font-fun text-3xl font-bold text-soft-yellow tracking-wide">Kerngroep Eksaarde</h3>
         </div>
         <!-- Verbindingslijn -->
-        <div class="w-1 h-8 bg-slate-900 mx-auto"></div>
+        <div class="w-2 h-8 bg-deep-blue mx-auto"></div>
       </div>
 
-      <!-- Grid voor de Onderdelen / Verantwoordelijken -->
-      <div class="grid grid-cols-3 gap-8">
+      <!-- Grid voor de Verantwoordelijken -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <!-- Onderdeel 1 -->
-        <div class="bg-white p-6 sm:p-8 rounded-3xl border-3 border-slate-900 shadow-[8px_8px_0px_0px_rgba(15,23,42,1)] flex flex-col justify-between relative overflow-hidden">
+        <!-- Tom Deganck -->
+        <div class="bg-white p-6 rounded-3xl border-3 border-deep-blue shadow-cartoon flex flex-col justify-between relative overflow-hidden">
           <div>
-            <!-- Profielfoto met Smurf als overlappende kader/overlay -->
-            <div class="relative w-32 h-32 mx-auto mb-6">
-              <!-- Hoofdfoto (Persoon) -->
-              <div class="w-28 h-28 rounded-2xl border-2 border-slate-900 overflow-hidden shadow-md bg-amber-100 absolute top-2 left-2">
+            <div class="relative w-32 h-32 mx-auto mb-4">
+              <div class="w-28 h-28 rounded-2xl border-3 border-deep-blue overflow-hidden shadow-md bg-amber-100 absolute top-2 left-2">
                 <img src="images/Mensen/tomD.png" alt="Tom Deganck" class="w-full h-full object-cover">
               </div>
-              <!-- Smurf Overlay -->
               <div class="absolute -bottom-1 -right-4 z-10 h-28 w-16 rotate-6">
-                <img src="images/Smurfen/Grote_Smurf_2011.webp" alt="Smurf Kader" class="w-full h-full object-contain">
+                <img src="images/Smurfen/Grote_Smurf_2011.webp" alt="Grote Smurf" class="w-full h-full object-contain">
               </div>
             </div>
-            <h3 class="font-playful text-2xl font-black text-slate-900 mb-1 text-center">Tom Deganck</h3>
-            <span class="text-xs font-black text-sky-600 uppercase tracking-wider block text-center mb-2">Voorzitter Kerngroep & Coördinatie</span>
-            <div class="bg-sky-50 p-4 rounded-2xl border-2 border-slate-900 text-center">
-              <p class="text-xs font-bold leading-relaxed text-slate-700">Verantwoordelijk voor het algemeen overleg, de planning en de dagelijkse bestuur van de kerngroep.</p>
+            <h3 class="font-fun text-2xl font-bold text-deep-blue mb-1 text-center">Tom Deganck</h3>
+            <span class="text-xs font-extrabold text-blue-800 uppercase tracking-wider block text-center mb-3">Voorzitter & Coördinatie</span>
+            <div class="bg-amber-100/70 p-3 rounded-xl border-2 border-deep-blue text-center">
+              <p class="text-xs font-semibold leading-relaxed text-deep-blue">Knopen doorhakken, data oplijsten en creatieve ideeën stimuleren[cite: 6].</p>
             </div>
           </div>
         </div>
-        <div class="bg-white p-6 sm:p-8 rounded-3xl border-3 border-slate-900 shadow-[8px_8px_0px_0px_rgba(15,23,42,1)] flex flex-col justify-between relative overflow-hidden">
+
+        <!-- Hannah Everaert -->
+        <div class="bg-white p-6 rounded-3xl border-3 border-deep-blue shadow-cartoon flex flex-col justify-between relative overflow-hidden">
           <div>
-            <!-- Profielfoto met Smurf als overlappende kader/overlay -->
-            <div class="relative w-32 h-32 mx-auto mb-6">
-              <!-- Hoofdfoto (Persoon) -->
-              <div class="w-28 h-28 rounded-2xl border-2 border-slate-900 overflow-hidden shadow-md bg-amber-100 absolute top-2 left-2">
+            <div class="relative w-32 h-32 mx-auto mb-4">
+              <div class="w-28 h-28 rounded-2xl border-3 border-deep-blue overflow-hidden shadow-md bg-sky-100 absolute top-2 left-2">
                 <img src="images/Mensen/hannahE.png" alt="Hannah Everaert" class="w-full h-full object-cover">
               </div>
-              <!-- Smurf Overlay -->
               <div class="absolute -bottom-1 -right-4 z-10 h-28 w-16 rotate-6">
-                <img src="images/Smurfen/andereSmurf.webp" alt="Smurf Kader" class="w-full h-full object-contain">
+                <img src="images/Smurfen/Brilsmurf.webp" alt="Brilsmurf" class="w-full h-full object-contain">
               </div>
             </div>
-            <h3 class="font-playful text-2xl font-black text-slate-900 mb-1 text-center">Hannah Everaert</h3>
-            <span class="text-xs font-black text-sky-600 uppercase tracking-wider block text-center mb-2">Onder voorzitter Kerngroep & Coördinatie</span>
-            <div class="bg-sky-50 p-4 rounded-2xl border-2 border-slate-900 text-center">
-              <p class="text-xs font-bold leading-relaxed text-slate-700">Verantwoordelijk voor het algemeen overleg, de planning en de dagelijkse bestuur van de kerngroep.</p>
+            <h3 class="font-fun text-2xl font-bold text-deep-blue mb-1 text-center">Hannah Everaert</h3>
+            <span class="text-xs font-extrabold text-blue-800 uppercase tracking-wider block text-center mb-3">Ondervoorzitter & Sfeerbeheer</span>
+            <div class="bg-sky-100/70 p-3 rounded-xl border-2 border-deep-blue text-center">
+              <p class="text-xs font-semibold leading-relaxed text-deep-blue">Coördinatie, overnemen bij afwezigheid en sfeerbeheer/evenementen[cite: 6].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Elena Fournier -->
+        <div class="bg-white p-6 rounded-3xl border-3 border-deep-blue shadow-cartoon flex flex-col justify-between relative overflow-hidden">
+          <div>
+            <div class="relative w-32 h-32 mx-auto mb-4">
+              <div class="w-28 h-28 rounded-2xl border-3 border-deep-blue overflow-hidden shadow-md bg-emerald-100 absolute top-2 left-2 flex items-center justify-center font-fun text-3xl font-bold text-deep-blue">
+                EF
+              </div>
+              <div class="absolute -bottom-1 -right-4 z-10 h-28 w-16 rotate-6">
+                <img src="images/Smurfen/Potloodsmurf.png" alt="Potloodsmurf" class="h-full w-auto max-w-none">
+              </div>
+            </div>
+            <h3 class="font-fun text-2xl font-bold text-deep-blue mb-1 text-center">Elena Fournier</h3>
+            <span class="text-xs font-extrabold text-blue-800 uppercase tracking-wider block text-center mb-3">Secretaris & Toneel</span>
+            <div class="bg-emerald-100/70 p-3 rounded-xl border-2 border-deep-blue text-center">
+              <p class="text-xs font-semibold leading-relaxed text-deep-blue">Verslaggeving, verbeterpunten opvolgen en het uitschrijven van het toneel[cite: 6].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Romy Tackaert -->
+        <div class="bg-white p-6 rounded-3xl border-3 border-deep-blue shadow-cartoon flex flex-col justify-between relative overflow-hidden">
+          <div>
+            <div class="relative w-32 h-32 mx-auto mb-4">
+              <div class="w-28 h-28 rounded-2xl border-3 border-deep-blue overflow-hidden shadow-md bg-purple-100 absolute top-2 left-2 flex items-center justify-center font-fun text-3xl font-bold text-deep-blue">
+                RT
+              </div>
+              <div class="absolute -bottom-1 -right-4 z-10 h-28 w-16 rotate-6">
+                <img src="images/Smurfen/Smurfin.webp" class="w-full h-full object-contain">
+              </div>
+            </div>
+            <h3 class="font-fun text-2xl font-bold text-deep-blue mb-1 text-center">Romy Tackaert</h3>
+            <span class="text-xs font-extrabold text-blue-800 uppercase tracking-wider block text-center mb-3">Sfeerbeheer & Evenementen</span>
+            <div class="bg-purple-100/70 p-3 rounded-xl border-2 border-deep-blue text-center">
+              <p class="text-xs font-semibold leading-relaxed text-deep-blue">Activiteiten in goede banen leiden en logistiek regelen[cite: 6].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yoran Noens -->
+        <div class="bg-white p-6 rounded-3xl border-3 border-deep-blue shadow-cartoon flex flex-col justify-between relative overflow-hidden">
+          <div>
+            <div class="relative w-32 h-32 mx-auto mb-4">
+              <div class="w-28 h-28 rounded-2xl border-3 border-deep-blue overflow-hidden shadow-md bg-rose-100 absolute top-2 left-2 flex items-center justify-center font-fun text-3xl font-bold text-deep-blue">
+                YN
+              </div>
+              <div class="absolute -bottom-1 -right-4 z-10 h-28 w-16 rotate-6">
+                <img src="images/Smurfen/Potige_Smurf.webp" class="w-full h-full object-contain">
+              </div>
+            </div>
+            <h3 class="font-fun text-2xl font-bold text-deep-blue mb-1 text-center">Yoran Noens</h3>
+            <span class="text-xs font-extrabold text-blue-800 uppercase tracking-wider block text-center mb-3">Sfeerbeheer & Evenementen</span>
+            <div class="bg-rose-100/70 p-3 rounded-xl border-2 border-deep-blue text-center">
+              <p class="text-xs font-semibold leading-relaxed text-deep-blue">Voorbereidingen coördineren en zorgen voor leuke sfeermomentjes[cite: 6].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pablo Verleyen -->
+        <div class="bg-white p-6 rounded-3xl border-3 border-deep-blue shadow-cartoon flex flex-col justify-between relative overflow-hidden">
+          <div>
+            <div class="relative w-32 h-32 mx-auto mb-4">
+              <div class="w-28 h-28 rounded-2xl border-3 border-deep-blue overflow-hidden shadow-md bg-teal-100 absolute top-2 left-2 flex items-center justify-center font-fun text-3xl font-bold text-deep-blue">
+                PV
+              </div>
+              <div class="absolute -bottom-1 -right-4 z-10 h-28 w-16 rotate-6">
+                <img src="images/Smurfen/Mopperaar.webp" class="w-full h-full object-contain">
+              </div>
+            </div>
+            <h3 class="font-fun text-2xl font-bold text-deep-blue mb-1 text-center">Pablo Verleyen</h3>
+            <span class="text-xs font-extrabold text-blue-800 uppercase tracking-wider block text-center mb-3">Sfeerbeheer & Evenementen</span>
+            <div class="bg-teal-100/70 p-3 rounded-xl border-2 border-deep-blue text-center">
+              <p class="text-xs font-semibold leading-relaxed text-deep-blue">Ondersteunen van activiteiten en logistieke taken op het speelplein[cite: 6].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alice Everaert -->
+        <div class="bg-white p-6 rounded-3xl border-3 border-deep-blue shadow-cartoon flex flex-col justify-between relative overflow-hidden">
+          <div>
+            <div class="relative w-32 h-32 mx-auto mb-4">
+              <div class="w-28 h-28 rounded-2xl border-3 border-deep-blue overflow-hidden shadow-md bg-orange-100 absolute top-2 left-2 flex items-center justify-center font-fun text-3xl font-bold text-deep-blue">
+                AE
+              </div>
+              <div class="absolute -bottom-1 -right-4 z-10 h-28 w-16 rotate-6">
+                <img src="images/Smurfen/Brilsmurf.webp" class="w-full h-full object-contain">
+              </div>
+            </div>
+            <h3 class="font-fun text-2xl font-bold text-deep-blue mb-1 text-center">Alice Everaert</h3>
+            <span class="text-xs font-extrabold text-blue-800 uppercase tracking-wider block text-center mb-3">Media Verantwoordelijke</span>
+            <div class="bg-orange-100/70 p-3 rounded-xl border-2 border-deep-blue text-center">
+              <p class="text-xs font-semibold leading-relaxed text-deep-blue">Posts maken voor de babbelgroep en moni's warm maken[cite: 6].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marie Deganck -->
+        <div class="bg-white p-6 rounded-3xl border-3 border-deep-blue shadow-cartoon flex flex-col justify-between relative overflow-hidden">
+          <div>
+            <div class="relative w-32 h-32 mx-auto mb-4">
+              <div class="w-28 h-28 rounded-2xl border-3 border-deep-blue overflow-hidden shadow-md bg-indigo-100 absolute top-2 left-2 flex items-center justify-center font-fun text-3xl font-bold text-deep-blue">
+                MD
+              </div>
+              <div class="absolute -bottom-1 -right-4 z-10 h-28 w-16 rotate-6">
+                <img src="images/Smurfen/andereSmurf.webp" alt="Smurf" class="w-full h-full object-contain">
+              </div>
+            </div>
+            <h3 class="font-fun text-2xl font-bold text-deep-blue mb-1 text-center">Marie Deganck</h3>
+            <span class="text-xs font-extrabold text-blue-800 uppercase tracking-wider block text-center mb-3">Media Verantwoordelijke</span>
+            <div class="bg-indigo-100/70 p-3 rounded-xl border-2 border-deep-blue text-center">
+              <p class="text-xs font-semibold leading-relaxed text-deep-blue">Aankondigingen en communicatie verzorgen om animatoren te betrekken[cite: 6].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mette-marit Van Laere -->
+        <div class="bg-white p-6 rounded-3xl border-3 border-deep-blue shadow-cartoon flex flex-col justify-between relative overflow-hidden">
+          <div>
+            <div class="relative w-32 h-32 mx-auto mb-4">
+              <div class="w-28 h-28 rounded-2xl border-3 border-deep-blue overflow-hidden shadow-md bg-lime-100 absolute top-2 left-2 flex items-center justify-center font-fun text-3xl font-bold text-deep-blue">
+                MV
+              </div>
+              <div class="absolute -bottom-1 -right-4 z-10 h-28 w-16 rotate-6">
+                <img src="images/Smurfen/Knutselssmurf.png" alt="Knutselssmurf" class="h-full w-auto max-w-none">
+              </div>
+            </div>
+            <h3 class="font-fun text-2xl font-bold text-deep-blue mb-1 text-center">Mette-marit Van Laere</h3>
+            <span class="text-xs font-extrabold text-blue-800 uppercase tracking-wider block text-center mb-3">Decorbeheerder</span>
+            <div class="bg-lime-100/70 p-3 rounded-xl border-2 border-deep-blue text-center">
+              <p class="text-xs font-semibold leading-relaxed text-deep-blue">Ideeën verzamelen, decordagen inplannen en coördineren[cite: 6].</p>
             </div>
           </div>
         </div>
@@ -159,7 +312,6 @@
   </section>
 
   <script>
-    // Jouw nieuwste Google Apps Script URL
     const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw70gH2EAscr10TBzxw8VRimVpOU-Lz5aHdYfS6aU9e4Kmg3HEWxJmshM9DyDnr_fKJ/exec";
     
     const form = document.getElementById('ideaForm');
@@ -167,31 +319,29 @@
     const submitBtn = document.getElementById('submitBtn');
     const board = document.getElementById('ideasBoard');
 
-    // 1. JSONP Callback om opgehaalde ideeën op te bouwen
     window.handleIdeasResponse = function(data) {
       board.innerHTML = "";
 
       if (!data || data.length === 0) {
-        board.innerHTML = `<p class="text-slate-500 col-span-3 text-center font-medium">Er staan nog geen ideeën op de muur. Wees de eerste!</p>`;
+        board.innerHTML = `<p class="text-deep-blue col-span-2 text-center font-semibold text-lg tracking-wide">Er staan nog geen ideeën op de muur. Wees de eerste!</p>`;
         return;
       }
 
       data.reverse().forEach(item => {
         const card = document.createElement('div');
-        card.className = "bg-purple-50 p-5 rounded-2xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)]";
+        card.className = "bg-white p-5 rounded-2xl border-3 border-deep-blue shadow-cartoon";
         card.innerHTML = `
-          <span class="text-[10px] font-black uppercase tracking-wider text-purple-900 bg-purple-200 px-2.5 py-1 rounded-md border border-purple-400">${item.categorie || 'Idee'}</span>
-          <p class="text-slate-900 mt-3 text-sm font-semibold">"${item.idee}"</p>
-          <div class="mt-4 pt-3 border-t border-slate-200 flex justify-between items-center text-xs font-bold text-slate-700">
+          <span class="text-xs font-bold uppercase tracking-widest text-soft-yellow bg-deep-blue px-3 py-1 rounded-md border-2 border-deep-blue">${item.categorie || 'Idee'}</span>
+          <p class="text-deep-blue mt-3 text-base font-semibold">"${item.idee}"</p>
+          <div class="mt-4 pt-3 border-t-2 border-blue-100 flex justify-between items-center text-xs font-bold text-deep-blue">
             <span>— ${item.auteur || 'Anoniem'}</span>
-            <button onclick="likeIdea(this)" class="hover:text-purple-700 transition"><i class="fa-solid fa-thumbs-up"></i> <span class="like-count">0</span></button>
+            <button onclick="likeIdea(this)" class="hover:text-blue-700 transition"><i class="fa-solid fa-thumbs-up"></i> <span class="like-count">0</span></button>
           </div>
         `;
         board.appendChild(card);
       });
     };
 
-    // 2. Ideeën ophalen via Script tag (omzeilt CORS en 401 volledig)
     function loadIdeas() {
       const oldScript = document.getElementById('jsonp-script');
       if (oldScript) oldScript.remove();
@@ -200,15 +350,13 @@
       script.id = 'jsonp-script';
       script.src = GOOGLE_SCRIPT_URL + "?callback=handleIdeasResponse&timestamp=" + new Date().getTime();
       script.onerror = function() {
-        board.innerHTML = `<p class="text-amber-700 col-span-2 text-center font-bold">Kon ideeën niet inladen vanuit Google Sheets. Controleer de web-app permissies.</p>`;
+        board.innerHTML = `<p class="text-deep-blue col-span-2 text-center font-semibold text-lg tracking-wide">Kon ideeën niet inladen vanuit Google Sheets. Controleer de web-app permissies.</p>`;
       };
       document.body.appendChild(script);
     }
 
-    // Direct inladen bij het openen van de pagina
     window.addEventListener('DOMContentLoaded', loadIdeas);
 
-    // 3. Verzenden via Fetch API met no-cors
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       
@@ -227,18 +375,17 @@
       })
       .then(() => {
         statusMsg.classList.remove('hidden');
-        statusMsg.className = "mt-4 p-3 text-center text-sm font-bold rounded-xl border-2 border-slate-900 bg-emerald-100 text-emerald-900";
+        statusMsg.className = "mt-4 p-3 text-center text-base font-bold rounded-xl border-3 border-deep-blue bg-blue-50 text-deep-blue tracking-wide";
         statusMsg.textContent = "Idee succesvol opgeslagen in Google Sheets! 🎉";
         
-        // Voeg het nieuwe idee meteen toe op het scherm
         const newCard = document.createElement('div');
-        newCard.className = "bg-emerald-50 p-5 rounded-2xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)]";
+        newCard.className = "bg-white p-5 rounded-2xl border-3 border-deep-blue shadow-cartoon";
         newCard.innerHTML = `
-          <span class="text-[10px] font-black uppercase tracking-wider text-emerald-900 bg-emerald-200 px-2.5 py-1 rounded-md border border-emerald-400">${category}</span>
-          <p class="text-slate-900 mt-3 text-sm font-semibold">"${text}"</p>
-          <div class="mt-4 pt-3 border-t border-slate-200 flex justify-between items-center text-xs font-bold text-slate-700">
+          <span class="text-xs font-bold uppercase tracking-widest text-soft-yellow bg-deep-blue px-3 py-1 rounded-md border-2 border-deep-blue">${category}</span>
+          <p class="text-deep-blue mt-3 text-base font-semibold">"${text}"</p>
+          <div class="mt-4 pt-3 border-t-2 border-blue-100 flex justify-between items-center text-xs font-bold text-deep-blue">
             <span>— ${author}</span>
-            <button onclick="likeIdea(this)" class="hover:text-emerald-700 transition"><i class="fa-solid fa-thumbs-up"></i> <span class="like-count">1</span></button>
+            <button onclick="likeIdea(this)" class="hover:text-blue-700 transition"><i class="fa-solid fa-thumbs-up"></i> <span class="like-count">1</span></button>
           </div>
         `;
         
@@ -251,7 +398,7 @@
       })
       .catch(() => {
         statusMsg.classList.remove('hidden');
-        statusMsg.className = "mt-4 p-3 text-center text-sm font-bold rounded-xl border-2 border-slate-900 bg-amber-100 text-amber-900";
+        statusMsg.className = "mt-4 p-3 text-center text-base font-bold rounded-xl border-3 border-deep-blue bg-amber-50 text-deep-blue tracking-wide";
         statusMsg.textContent = "Er ging iets mis bij het verzenden.";
       })
       .finally(() => {
@@ -260,12 +407,11 @@
       });
     });
 
-    // Like functionaliteit
     function likeIdea(btn) {
       const countSpan = btn.querySelector('.like-count');
       let currentLikes = parseInt(countSpan.textContent);
       countSpan.textContent = currentLikes + 1;
-      btn.classList.add('text-sky-600');
+      btn.classList.add('text-blue-700');
       btn.disabled = true;
     }
   </script>
